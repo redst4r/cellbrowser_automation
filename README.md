@@ -39,7 +39,7 @@ title: TestingCB
 
 ### Building it into cellbrowser
 ```python
-from cbautomation import parse_collection
+from cellbrowser_automation import parse_collection
 import yaml
 
 with open('some.yaml', 'r') as fh:

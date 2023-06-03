@@ -207,7 +207,7 @@ class CB_Dataset():
             # cellbrowser starts pulling in EnsemblIDs and thigns get messed up
             # hence: if gene_ids is present rename it to ensembl_gene_id
             # note: we only need to load into mem if that is indeed present -> do a peek into the h5ad!
-            var = load_var(tmp_h5ad_path, '/var')
+            var = load_var(tmp_h5ad_path)
 
             if 'gene_ids' in var:
                 logging.info('renaming gene_ids!!')

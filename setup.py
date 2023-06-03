@@ -18,6 +18,6 @@ setup(name='cellbrowser_automation',
           'scipy',
           'scanpy>1.7',
           'sctools @git+https://github.com/redst4r/sctools',
-          'yaml', 
+          'pyyaml', 
           ],
       zip_safe=False)
