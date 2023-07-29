@@ -198,7 +198,7 @@ class CB_Dataset():
             if self.subsample_for_testing:
                 print('subsampling')
                 a = sc.read_h5ad(tmp_h5ad_path)
-                ix = np.random.choice(a.obs.index, np.minimum(N_SUBSAMPLE, a.shape[0]))
+                ix = np.random.choice(a.obs.index, np.minimum(N_SUBSAMPLE, a.shape[0]), replace=False) # No replacement, funny things happen if the same cell gets selected twice
                 b = a[ix]
                 b.write_h5ad(tmp_h5ad_path)
 
