@@ -348,7 +348,7 @@ def _cbconfig_to_str(cb_config):
         'defColorField':'leiden',
         'labelField':'leiden',
         'enumFields':['leiden', 'nobatch_leiden'],
-        'markers':{"file": "markers.tsv", "shortLabel":"Cluster Markers"},  # todo: check that it exists
+        'markers':[{"file": "markers.tsv", "shortLabel":"Cluster Markers"}],  # todo: check that it exists
         'labelField':'leiden',
         'quickGenesFile': 'quickGenes.tsv',
         'coords': [{ "file": "umap_coords.tsv", "shortLabel": "UMAP"}, {"file": "pca_coords.tsv", "shortLabel": "pca"}]
